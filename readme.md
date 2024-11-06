@@ -34,16 +34,24 @@ pip install -r requirements.txt
 3. Configure environment variables:
 
 ```bash
-cp config/.env.example config/.env
-# Edit .env with your API keys
+python -m venv venv
+#Edit .env with your API keys
 ```
 
 4. Run the application:
 
 ```bash
-streamlit run src/main.py
+streamlit run main.py
 ```
 
-```
+## Usage
 
-```
+1. Enter company name
+2. Select industry
+3. Click "Generate AI Use Cases"
+4. Review analysis and download reports
+
+## Documentation
+
+- [Architecture Details](docs/architecture.md)
+- [Methodology](docs/methodology.md)

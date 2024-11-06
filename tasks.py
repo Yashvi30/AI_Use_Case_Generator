@@ -32,13 +32,16 @@ def create_tasks(company_name, agents):
     )
 
     resource_collection = Task(
-        description="""For each identified use case:
-        1. Find relevant datasets with direct links
-        2. Identify technology stack and tools needed
-        3. List implementation resources and tutorials
-        4. Include case studies and research papers
-        5. Format all links in markdown with brief descriptions""",
-        expected_output="A comprehensive resource guide with clickable links in markdown format.",
+        description=f"""For each identified AI use case for {company_name}:
+        1. Find and provide links to real, existing datasets on Kaggle, HuggingFace, or UCI Machine Learning Repository.
+        2. Search for and link to actual research papers on arXiv or IEEE Xplore.
+        3. Identify and link to official documentation or tutorials for relevant AI/ML libraries or frameworks.
+        4. Find and link to real-world case studies or implementation examples from reputable sources.
+        5. Ensure all links are working and directly accessible.
+        6. Format each link as: [Brief Description](URL)
+        
+        Verify each link before including it in your response.""",
+        expected_output="A list of verified, working links to real resources for each use case, formatted in markdown.",
         agent=agents[2]
     )
 
