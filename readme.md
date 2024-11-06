@@ -3,6 +3,7 @@
 ## Overview
 
 The AI Use Case Generator is a multi-agent system that analyzes companies and generates tailored AI implementation recommendations. It uses CrewAI framework to orchestrate multiple AI agents that work together to provide comprehensive analysis and actionable insights.
+![alt text](docs\images\image.png)
 
 ## Features
 
