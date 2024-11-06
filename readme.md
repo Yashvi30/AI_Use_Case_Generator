@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ```bash
 python -m venv venv
-#Edit .env with your API keys
+#Create .env with your API keys
 ```
 
 4. Run the application:
